@@ -1,0 +1,33 @@
+.brokenButtonCont {
+  position: absolute;
+  right: -18px;
+  bottom: -28px;
+
+  & > svg {
+    @media screen and (max-width: 1024px) {
+      height: 100px;
+      width: auto;
+    }
+  }
+}
+
+.brokenButtonContent {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  left: 43px;
+  bottom: 44px;
+
+  & > h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 34px #ff6f66;
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+}

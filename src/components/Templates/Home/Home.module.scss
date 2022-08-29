@@ -1,0 +1,151 @@
+.homeWrapper {
+  background-image: url(/rocks_bg.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.runesContainerLeft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  position: absolute;
+  left: 10px;
+  z-index: 234;
+}
+
+.contentWrapper {
+  background-image: url(/hero_bg.png);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.runesContainerRight {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  position: absolute;
+  right: 10px;
+  z-index: 234;
+}
+
+.runeCont {
+  display: flex;
+  justify-content: flex-end;
+  & > svg {
+    width: 23px !important;
+    height: 19px !important;
+    @media screen and (max-width: 1024px) {
+      width: 14px !important;
+      height: 12px !important;
+    }
+  }
+}
+
+.titleCont {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-left: 20px;
+  flex-direction: column;
+  padding-left: 80px;
+
+  & > h4 {
+    font-weight: 500;
+    font-size: 28.3429px;
+    line-height: 128%;
+    text-shadow: 0px 15.9429px 19.4857px rgba(0, 0, 0, 0.39);
+    margin: 0;
+    margin-left: 40px;
+  }
+}
+
+.demonImage {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  max-width: 600px;
+}
+
+.brokenButton {
+  position: absolute;
+  bottom: -26px;
+  right: -100px;
+}
+
+.mediaCont {
+  display: flex;
+  padding-left: 35px;
+  align-items: center;
+  & > svg {
+    margin: 0 10px;
+  }
+}
+
+.homeMobileCont {
+  background-image: url(/hero_bg.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position-y: -34px;
+}
+
+.demonImageMobile {
+  max-height: 50vh;
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+  z-index: 232323;
+}
+
+.demonsLogoContMobile {
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.crownLogoContMobile {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mediaContMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}

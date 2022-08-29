@@ -1,0 +1,63 @@
+.mainLayout {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.navBar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 34343;
+  @media screen and (max-width: 1024px) {
+    padding: 10px 0;
+  }
+}
+
+.runesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.runesContainerMobile {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.runesContLeft {
+  padding-right: 70px;
+}
+
+.demonsLogoCont {
+  position: absolute;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.runesContRight {
+  padding-left: 70px;
+  padding-right: 10px;
+}
+
+.runeCont {
+  display: flex;
+  align-items: center;
+  & > svg {
+    width: 23px !important;
+    height: 19px !important;
+    @media screen and (max-width: 1024px) {
+      width: 14px !important;
+      height: 12px !important;
+    }
+  }
+}
