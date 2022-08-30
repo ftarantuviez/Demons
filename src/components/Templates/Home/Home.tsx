@@ -23,7 +23,7 @@ const HomeTemplate: FC = () => {
           </div>
         ))}
       </div>
-      {dimensions?.width < 768 ? (
+      {dimensions?.width <= 768 ? (
         <HomeMobile />
       ) : (
         <div className={styles.contentWrapper}>

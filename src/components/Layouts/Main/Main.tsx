@@ -16,7 +16,7 @@ const MainLayout: FC<Props> = (props) => {
     <div className={styles.mainLayout}>
       <div className={styles.navBar}>
         {/* RUNES LEFT */}
-        <div className={clsx([styles.runesContainer, styles.runesContLeft])}>
+        <div className={styles.runesContainer}>
           {runes.topLeft.map((rune) => (
             <div key={rune.key} className={styles.runeCont}>
               {rune.rune}
@@ -30,16 +30,6 @@ const MainLayout: FC<Props> = (props) => {
           <DemonsLogo />
         </div>
         {/* DEMON LOGO */}
-
-        {/* RUNES RIGHT */}
-        <div className={clsx([styles.runesContainer, styles.runesContRight])}>
-          {runes.topRight.map((rune) => (
-            <div key={rune.key} className={styles.runeCont}>
-              {rune.rune}
-            </div>
-          ))}
-        </div>
-        {/* RUNES RIGHT */}
 
         {/* RUNES MOBILE */}
         <div className={clsx([styles.runesContainerMobile])}>

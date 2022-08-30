@@ -26,10 +26,9 @@
   background-image: url(/hero_bg.png);
   width: 100%;
   height: 100%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
+  background-position: 50%;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -84,6 +83,30 @@
   right: 0;
   bottom: -20px;
   max-width: 600px;
+}
+
+.brokenButtonCont {
+  position: relative;
+  width: min-content;
+}
+
+.brokenButtonContent {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 16px;
+  right: 27%;
+
+  & > h5 {
+    margin-left: 10px;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 34px #ff6f66;
+  }
 }
 
 .brokenButton {

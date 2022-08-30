@@ -8,7 +8,7 @@
 
 .navBar {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -21,20 +21,19 @@
 .runesContainer {
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 100%;
   @media screen and (max-width: 768px) {
     display: none;
   }
 }
 
 .runesContainerMobile {
-  display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-
-.runesContLeft {
-  padding-right: 70px;
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 }
 
 .demonsLogoCont {
@@ -45,8 +44,7 @@
 }
 
 .runesContRight {
-  padding-left: 70px;
-  padding-right: 10px;
+  padding-right: 10px 0;
 }
 
 .runeCont {
