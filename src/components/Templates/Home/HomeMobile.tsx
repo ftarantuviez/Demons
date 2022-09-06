@@ -26,10 +26,7 @@ const HomeMobile = () => {
         <Discord />
         <Telegram />
       </div>
-      <BrokenButton
-        text={"Whitelist"}
-        className={clsx([styles.brokenButton])}
-      />
+      <BrokenButton text={"Whitelist"} />
     </div>
   );
 };
