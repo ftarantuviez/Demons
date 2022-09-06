@@ -11,10 +11,10 @@ const HomeMobile = () => {
   return (
     <div className={styles.homeMobileCont}>
       <div className={styles.demonsLogoContMobile}>
-        <DemonsLogo style={{ marginTop: "25px" }} />
+        <DemonsLogo />
       </div>
       <div className={styles.crownLogoContMobile}>
-        <TheCrownMobile style={{ marginTop: "25px" }} />
+        <TheCrownMobile />
       </div>
       <img
         src={"/demon-character-mobile.png"}
