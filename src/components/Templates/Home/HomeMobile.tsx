@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import React from "react";
 import DemonsLogo from "src/assets/elements/DemonsLogo/DemonsLogo";
 import TheCrownMobile from "src/assets/elements/DemonsLogo/TheCrownMobile";
